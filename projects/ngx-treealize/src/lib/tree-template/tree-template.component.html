@@ -1,0 +1,5 @@
+<div class="wrapper" (click)="selectNode($event, node.id)" [ngClass]="{'selected': node.id === selectedNode}">
+    <div class="container-template" (click)="tryToggleNodeState($event, node)">
+        <ng-container *ngTemplateOutlet="treeTemplate; context: { $implicit: node }"></ng-container>
+    </div>
+</div>

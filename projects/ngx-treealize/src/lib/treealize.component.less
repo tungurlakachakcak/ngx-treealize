@@ -1,0 +1,18 @@
+@paddingLeft: 20px;
+
+.container-tree {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-inline-start: @paddingLeft;
+        -webkit-padding-start: @paddingLeft;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .container-tree {
+        ul {
+            padding-left: @paddingLeft;
+        }
+    }
+}

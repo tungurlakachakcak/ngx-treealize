@@ -1,0 +1,23 @@
+<div *ngFor="let node of nodes; index as i" class="container-tree">
+  <ul [ngClass]="{'expanded': node.isExpanded}" class="ul-tree-template">
+      <li class="li-tree-template">
+          <tree-template
+              (select)="selectNode($event)"
+              [node]="node"
+              [nodes]="nodes"
+              [idx]="i"
+              [selectedNode]="selectedNode"
+              [treeTemplate]="treeTemplate"
+              (toggleNode)="tryToggleNodeState($event)"
+          ></tree-template>
+          <div class="expandable" *ngIf="node.isExpanded">
+              <ngx-treealize
+                  [nodes]="node.children"
+                  [selectedNode]="selectedNode"
+                  (selected)="selectNode($event)"
+                  [treeTemplate]="treeTemplate"
+              ></ngx-treealize>
+          </div>
+      </li>
+  </ul>
+</div>
