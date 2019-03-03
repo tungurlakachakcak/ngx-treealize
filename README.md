@@ -9,7 +9,7 @@
 
 Download or clone this repo and run `npm i` and `npm start`
 
-![Image only with illustrative purpose!](https://github.com/Vallerious/ngx-treealize/sample.png)
+![Image only with illustrative purpose!](https://github.com/Vallerious/ngx-treealize/blob/master/sample.png)
 
 ## Installation
 
