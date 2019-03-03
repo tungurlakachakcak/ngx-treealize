@@ -1,4 +1,4 @@
-# TreealizeLib
+# ngx-treealize
 
 * A simple component that renders a tree-like structure
 * No predefined node template, so you can customize it for your business case
