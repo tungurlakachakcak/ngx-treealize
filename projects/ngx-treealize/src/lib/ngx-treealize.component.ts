@@ -1,4 +1,4 @@
-import { Component, Input, Output, ElementRef, EventEmitter } from '@angular/core';
+import { Component, Input, Output, ElementRef, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { TreeNode } from './TreeNode';
 
 /**
@@ -10,7 +10,8 @@ import { TreeNode } from './TreeNode';
 @Component({
   selector: 'ngx-treealize',
   templateUrl: './ngx-treealize.component.html',
-  styleUrls: ['./treealize.component.less']
+  styleUrls: ['./treealize.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NgxTreealizeComponent {
   @Input() nodes: TreeNode[];

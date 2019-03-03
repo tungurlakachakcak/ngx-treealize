@@ -9,6 +9,8 @@
 
 Download or clone this repo and run `npm i` and `npm start`
 
+![Image only with illustrative purpose!](https://github.com/Vallerious/ngx-treealize/sample.png)
+
 ## Installation
 
 `npm i -S ngx-treealize`
@@ -62,8 +64,6 @@ export class AppModule {}
   <ng-template #template let-node>
     {{node.label}}
   </ng-template>
-
-</div>
 ```
 
 ```typescript
@@ -81,25 +81,20 @@ export class AppComponent {
     children: [{
       id: 2,
       label: 'Gabriel Meshuggah',
-      children: [],
-      isExpanded: false
+      children: []
     }, {
       id: 4,
       label: 'Bratan Slaoich',
       children: [{
         id: 41,
         label: 'Plens Laid',
-        children: [],
-        isExpanded: false
-      }],
-      isExpanded: false
-    }],
-    isExpanded: false
+        children: []
+      }]
+    }]
   }, {
     id: 3,
     label: 'Peter Meterson',
-    children: [],
-    isExpanded: false
+    children: []
   }]
 }
 ```

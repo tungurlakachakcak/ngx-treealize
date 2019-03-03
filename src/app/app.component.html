@@ -5,7 +5,9 @@
   </h1>
   <ngx-treealize [nodes]="nodes" [treeTemplate]="template"></ngx-treealize>
   <ng-template #template let-node>
-    {{node.label}}
+    <div class="container">
+      <img [src]="node.iconUrl" alt="icon" class="pic" /> {{node.label}}
+    </div>
   </ng-template>
 
 </div>

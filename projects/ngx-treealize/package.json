@@ -1,9 +1,14 @@
 {
   "name": "ngx-treealize",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": {
     "name": "Valeri Hristov",
-    "email": "valericfbg@gmail.com"
+    "email": "valericfbg@gmail.com",
+    "url": "https://github.com/Vallerious/ngx-treealize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vallerious/ngx-treealize.git"
   },
   "private": false,
   "peerDependencies": {
